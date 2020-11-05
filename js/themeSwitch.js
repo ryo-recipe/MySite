@@ -6,6 +6,7 @@ const FOOTERCOLOR = document.querySelector('footer');
 const CARDCOLOR = document.getElementById('contact-box');
 const JUMBOTRONCOLOR = document.querySelector('#jumbotron')
 const BTNCOLORS = document.querySelectorAll('.contact-btn');
+const ICONCOLORS = document.querySelectorAll('.icon-color')
 const NAVCOLOR = document.querySelector('#header-nav')
 
 
@@ -25,7 +26,11 @@ THEMESWITCH.addEventListener('click', () => {
     BTNCOLORS.forEach(BTNCOLOR => {
         BTNCOLOR.classList.toggle('btn-color');
         BTNCOLOR.classList.toggle('btn-color-dark');
-    })
+    });
+    ICONCOLORS.forEach(ICONCOLOR => {
+        ICONCOLOR.classList.toggle('icon-color');
+        ICONCOLOR.classList.toggle('icon-color-dark');
+    });
     NAVCOLOR.classList.toggle('navbar-light');
     NAVCOLOR.classList.toggle('navbar-dark');
 });

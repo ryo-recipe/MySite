@@ -62,6 +62,11 @@
     transition: all 1s;
 }
 
+.icon-color {
+    color: var(--text-footer);
+    transition: all 1s;
+}
+
 /* dark-theme */
 :root {
     --bg-header-dark: #16161a;
@@ -118,6 +123,12 @@
     transition: all 1s;
 }
 
+.icon-color-dark {
+    color: var(--text-footer-dark);
+    transition: all 1s;
+}
+
+/* フルスクリーンナビ */
 .mask-color {
     color: #fffffe;
     text-shadow: 0 0 30px #fffffe;
