@@ -1,0 +1,140 @@
+
+/* light-theme */
+
+:root {
+    --bg-header: #fffffe;
+    --text-header: #2b2c34;
+    --bg-main: #d1d1e9;
+    --text-main: #2b2c34;
+    --bg-footer: #fffffe;
+    --text-footer: #2b2c34;
+    --ac-light: #6246ea;
+}
+
+.header-color{
+    background: var(--bg-header);
+    color: var(--text-header);
+    transition: all 1s;
+}
+
+.main-color {
+    background: var(--bg-main);
+    color: var(--text-main);
+    transition: all 1s;
+}
+
+.footer-color {
+    background: var(--bg-footer);
+    color: var(--text-footer);
+    transition: all 1s;
+}
+
+.card-color {
+    background: var(--bg-header);
+    color: var(--text-header);
+    border: 3px solid var(--text-main);
+    border-radius: 1rem;
+    transition: all 1s;
+}
+
+.ac-color {
+    background: var(--ac-light);
+    color: var(--text-header);
+    transition: all 1s;
+}
+
+.neomo-color {
+    color: var(--bg-main);
+    transition: all 1s;
+}
+
+.jumbotron-color {
+    background-color: var(--bg-main);
+    border: 3px solid var(--text-main);
+    border-radius: 1rem;
+    transition: all 1s;
+}
+
+.btn-color {
+    background-color: var(--ac-light);
+    color: #fffffe;
+    border: 3px solid var(--text-header);   
+    transition: all 1s;
+}
+
+/* dark-theme */
+:root {
+    --bg-header-dark: #16161a;
+    --text-header-dark: #fffffe;
+    --bg-main-dark: #242629;
+    --text-main-dark: #fffffe;
+    --bg-footer-dark: #16161a;
+    --text-footer-dark: #fffffe;
+    --ac-dark: #2cb67d;
+}
+
+.header-color-dark {
+    background: var(--bg-header-dark);
+    color: var(--text-header-dark);
+    transition: all 1s;
+}
+
+.main-color-dark {
+    background: var(--bg-main-dark);
+    color: var(--text-main-dark);
+    transition: all 1s;
+}
+
+.footer-color-dark {
+    background: var(--bg-footer-dark);
+    color: var(--text-footer-dark);
+    transition: all 1s;
+}
+
+.card-color-dark {
+    background: var(--bg-header-dark);
+    color: var(--text-header-dark);
+    border: 3px solid var(--text-main-dark);
+    border-radius: 1rem;
+    transition: all 1s;
+}
+
+.ac-color-dark {
+    background: var(--ac-dark);
+    transition: all 1s;
+}
+
+.jumbotron-color-dark {
+    background-color: var(--bg-main-dark);
+    border: 3px solid var(--text-main-dark);
+    border-radius: 1rem;
+    transition: all 1s;
+}
+
+.btn-color-dark {
+    background-color: var(--ac-dark);
+    color: #fffffe;
+    border: 3px solid var(--text-header-dark);
+    transition: all 1s;
+}
+
+.mask-color {
+    color: #fffffe;
+    text-shadow: 0 0 30px #fffffe;
+    font-weight: bold;
+}
+
+/* テーマ切替ボタン */
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-icon {
+    color: var(--ac-light);
+    transition: all 1s;
+}
+
+.checkbox-icon-dark {
+    color: var(--ac-dark);
+    transition: all 1s;
+}
