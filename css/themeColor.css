@@ -45,6 +45,7 @@
 
 .neomo-color {
     color: var(--bg-main);
+    text-shadow: 0 -1px 1px #232946, 1px 1px 1px #fffffe;
     transition: all 1s;
 }
 
@@ -106,6 +107,12 @@
 
 .ac-color-dark {
     background: var(--ac-dark);
+    transition: all 1s;
+}
+
+.neomo-color-dark {
+    color: var(--bg-main-dark);
+    text-shadow: 0 -1px 1px #16161a, 1px 1px 1px #fffffe;
     transition: all 1s;
 }
 

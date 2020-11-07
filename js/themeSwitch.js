@@ -3,11 +3,12 @@ const THEMEBTN = document.querySelector('.checkbox-icon')
 const HEADERCOLOR = document.querySelector('header');
 const MAINCOLOR = document.querySelector('main');
 const FOOTERCOLOR = document.querySelector('footer');
-const CARDCOLOR = document.getElementById('contact-box');
 const JUMBOTRONCOLOR = document.querySelector('#jumbotron')
+const CARDCOLORS = document.querySelectorAll('.card-color');
 const BTNCOLORS = document.querySelectorAll('.contact-btn');
-const ICONCOLORS = document.querySelectorAll('.icon-color')
-const NAVCOLOR = document.querySelector('#header-nav')
+const ICONCOLORS = document.querySelectorAll('.icon-color');
+const NEOMOCOLORS = document.querySelectorAll('.neomo-color');
+const NAVCOLOR = document.querySelector('#header-nav');
 
 
 THEMESWITCH.addEventListener('click', () => {
@@ -19,17 +20,23 @@ THEMESWITCH.addEventListener('click', () => {
     MAINCOLOR.classList.toggle('main-color-dark');
     FOOTERCOLOR.classList.toggle('footer-color');
     FOOTERCOLOR.classList.toggle('footer-color-dark');
-    CARDCOLOR.classList.toggle('card-color');
-    CARDCOLOR.classList.toggle('card-color-dark');
     JUMBOTRONCOLOR.classList.toggle('jumbotron-color');
     JUMBOTRONCOLOR.classList.toggle('jumbotron-color-dark');
+    CARDCOLORS.forEach(CARDCOLOR => {
+        CARDCOLOR.classList.toggle('card-color');
+        CARDCOLOR.classList.toggle('card-color-dark');
+    });
     BTNCOLORS.forEach(BTNCOLOR => {
         BTNCOLOR.classList.toggle('btn-color');
         BTNCOLOR.classList.toggle('btn-color-dark');
     });
     ICONCOLORS.forEach(ICONCOLOR => {
         ICONCOLOR.classList.toggle('icon-color');
-        ICONCOLOR.classList.toggle('icon-color-dark');
+        ICONCOLOR.classList.toggle('icon-color-dark'); 3
+    });
+    NEOMOCOLORS.forEach(NEOMOCOLOR => {
+        NEOMOCOLOR.classList.toggle('neomo-color');
+        NEOMOCOLOR.classList.toggle('neomo-color-dark'); 3
     });
     NAVCOLOR.classList.toggle('navbar-light');
     NAVCOLOR.classList.toggle('navbar-dark');

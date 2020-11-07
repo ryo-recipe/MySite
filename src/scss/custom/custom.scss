@@ -44,17 +44,25 @@ nav {
   background-color: #6246ea;
 }
 
-// ニューモフィズム
-.neomo {
-  text-shadow: 0 -1px 1px #232946, 1px 1px 1px #fffffe;
-  font-size: 3rem;
-}
-.neomo2 {
-  text-shadow: 0 -1px 1px #232946, 1px 1px 1px #fffffe;
-}
-
 .aboutimg {
   max-height: 250px;
+}
+
+#jumbotron {
+  animation-name: fuwafuwa;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  @keyframes fuwafuwa {
+    0% {
+        transform: translate(0,0px);
+    }
+
+    100% {
+        transform: translate(0,-15px);
+    }
+}
 }
 
 // フルスクリーンナビ
@@ -135,10 +143,6 @@ nav {
 .active span {
   background-color: #fffffe;
   transition: all 1s;
-}
-
-html {
-	scroll-behavior: smooth;
 }
 
 // topへ戻るボタン
