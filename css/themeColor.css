@@ -73,11 +73,6 @@
     transition: all 1s;
 }
 
-.table-color-dark {
-    color: var(--text-main-dark);
-    transition: all 1s;
-}
-
 /* dark-theme */
 :root {
     --bg-header-dark: #16161a;
@@ -142,6 +137,11 @@
 
 .icon-color-dark {
     color: var(--text-footer-dark);
+    transition: all 1s;
+}
+
+.table-color-dark {
+    color: var(--text-main-dark);
     transition: all 1s;
 }
 
