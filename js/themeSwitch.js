@@ -9,7 +9,7 @@ const BTNCOLORS = document.querySelectorAll('.contact-btn');
 const ICONCOLORS = document.querySelectorAll('.icon-color');
 const NEOMOCOLORS = document.querySelectorAll('.neomo-color');
 const NAVCOLOR = document.querySelector('#header-nav');
-
+const TABLECOLORS = document.querySelectorAll('.table-color')
 
 THEMESWITCH.addEventListener('click', () => {
     THEMEBTN.classList.toggle('checkbox-icon');
@@ -32,12 +32,16 @@ THEMESWITCH.addEventListener('click', () => {
     });
     ICONCOLORS.forEach(ICONCOLOR => {
         ICONCOLOR.classList.toggle('icon-color');
-        ICONCOLOR.classList.toggle('icon-color-dark'); 3
+        ICONCOLOR.classList.toggle('icon-color-dark');
     });
     NEOMOCOLORS.forEach(NEOMOCOLOR => {
         NEOMOCOLOR.classList.toggle('neomo-color');
-        NEOMOCOLOR.classList.toggle('neomo-color-dark'); 3
+        NEOMOCOLOR.classList.toggle('neomo-color-dark');
     });
+    TABLECOLORS.forEach(TABLECOLOR => {
+        TABLECOLOR.classList.toggle('table-color');
+        TABLECOLOR.classList.toggle('table-color-dark');
+    })
     NAVCOLOR.classList.toggle('navbar-light');
     NAVCOLOR.classList.toggle('navbar-dark');
 });
