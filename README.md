@@ -2,4 +2,4 @@
 mysite
 
 # GitHub Pages
-https://muku-recipe.github.io/My-Site/
+https://ryo-recipe.github.io/MySite/
